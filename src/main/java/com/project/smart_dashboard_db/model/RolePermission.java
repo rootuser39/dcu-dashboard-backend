@@ -7,6 +7,7 @@ import javax.persistence.*;
 public class RolePermission {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "role_permission_id")
     private Long rolePermissionId;
 
     @ManyToOne

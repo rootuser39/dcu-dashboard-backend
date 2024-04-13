@@ -8,12 +8,15 @@ import java.util.Date;
 public class Slot {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "slot_id")
     private Long slotId;
 
     @Temporal(TemporalType.TIMESTAMP)
+    @Column(name = "from_time")
     private Date fromTime;
 
     @Temporal(TemporalType.TIMESTAMP)
+    @Column(name = "to_time")
     private Date toTime;
 
     public Long getSlotId() {

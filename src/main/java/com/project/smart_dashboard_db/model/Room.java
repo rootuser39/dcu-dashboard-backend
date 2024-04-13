@@ -7,14 +7,17 @@ import javax.persistence.*;
 public class Room {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "room_id")
     private Long roomId;
 
     private String name;
 
     private int capacity;
 
+    @Column(name = "air_quality")
     private float airQuality;
 
+    @Column(name = "noise_level")
     private float noiseLevel;
 
     private String building;

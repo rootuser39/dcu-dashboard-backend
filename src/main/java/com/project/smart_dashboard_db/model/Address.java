@@ -7,12 +7,14 @@ import javax.persistence.*;
 public class Address {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "address_id")
     private Long addressId;
 
     private String country;
 
     private String city;
 
+    @Column(name = "postal_code")
     private String postalCode;
 
     private String street;

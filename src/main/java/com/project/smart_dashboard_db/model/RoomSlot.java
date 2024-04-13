@@ -7,6 +7,7 @@ import javax.persistence.*;
 public class RoomSlot {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "room_slot_id")
     private Long roomSlotId;
 
     @ManyToOne
